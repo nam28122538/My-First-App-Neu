@@ -26,28 +26,6 @@
                                     <rect key="frame" x="143" y="48" width="115" height="67"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYk-Rp-k4N">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <color key="backgroundColor" red="0.90663857984293195" green="0.74373120286514394" blue="0.75331942943918762" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Decrease">
-                                    <color key="titleColor" red="0.90663857984293195" green="0.18376763338083538" blue="0.84379558328957771" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="626" width="174" height="66"/>
-                                </variation>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbc-Vb-XAO">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <color key="backgroundColor" red="0.18643972547022891" green="0.87322348736702127" blue="0.82564564565351717" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Increase">
-                                    <color key="titleColor" red="0.13711116042158011" green="0.15238989867975403" blue="0.90663857984293195" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="194" y="626" width="186" height="66"/>
-                                </variation>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Rx-V8-OIs">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <color key="backgroundColor" red="0.98229438366247779" green="0.73792731002840062" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -59,25 +37,56 @@
                                     <rect key="frame" x="105" y="135" width="191" height="435"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYk-Rp-k4N">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.90663857984293195" green="0.74373120286514394" blue="0.75331942943918762" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Decrease">
+                                    <color key="titleColor" red="0.90663857984293195" green="0.18376763338083538" blue="0.84379558328957771" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="626" width="174" height="66"/>
+                                </variation>
+                                <connections>
+                                    <action selector="decreaseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1O0-XS-5f3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbc-Vb-XAO">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.18643972547022891" green="0.87322348736702127" blue="0.82564564565351717" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Increase">
+                                    <color key="titleColor" red="0.13711116042158011" green="0.15238989867975403" blue="0.90663857984293195" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="202" y="626" width="186" height="66"/>
+                                </variation>
+                                <connections>
+                                    <action selector="increaseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Uk-jZ-WnQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.46362357120882114" blue="0.43355282386931027" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="345-pC-NbJ"/>
+                                <exclude reference="8Rx-V8-OIs"/>
                                 <exclude reference="hYk-Rp-k4N"/>
                                 <exclude reference="lbc-Vb-XAO"/>
-                                <exclude reference="8Rx-V8-OIs"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="345-pC-NbJ"/>
+                                <include reference="8Rx-V8-OIs"/>
                                 <include reference="hYk-Rp-k4N"/>
                                 <include reference="lbc-Vb-XAO"/>
-                                <include reference="8Rx-V8-OIs"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="numderLabel" destination="8Rx-V8-OIs" id="ptK-gs-F57"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
